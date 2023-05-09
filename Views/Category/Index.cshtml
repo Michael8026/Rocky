@@ -13,7 +13,7 @@
         </div>
         <div class="col-6 text-right">
             <a asp-controller="Category" asp-action="Create" class="btn btn-primary">
-                Create New Category
+                <i class="fa-solid fa-plus" @*fas fa-plus*@></i> &nbsp; Create New Category
             </a>
         </div>
     </div>
@@ -42,11 +42,11 @@
                         <td width="30%">@obj.DisplayOrder</td>
                         <td class="text-center">
                             <div class="w-75 btn-group" role="group">
-                                <a asp-controller="Category" asp-route-Id="@obj.Id" asp-action="Edit" class="btn btn-primary">
-                                    Edit
+                                <a asp-controller="Category" asp-route-Id="@obj.Id" asp-action="Edit" class="btn btn-primary mx-1">
+                                    <i class="fa-solid fa-pen-to-square"></i>
                                 </a>
-                                <a asp-controller="Category" asp-route-Id="@obj.Id" asp-action="Delete" class="btn btn-danger">
-                                    Delete
+                                <a asp-controller="Category" asp-route-Id="@obj.Id" asp-action="Delete" class="btn btn-danger mx-1">
+                                    <i class="fa-solid fa-trash"></i> &nbsp;
                                 </a>
                             </div>
 
